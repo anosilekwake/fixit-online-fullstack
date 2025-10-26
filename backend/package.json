@@ -1,0 +1,42 @@
+{
+  "name": "fixit-backend",
+  "version": "1.0.0",
+  "description": "FixIt Online Backend API (Node.js + Express + MongoDB)",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "lint": "eslint .",
+    "seed-admin": "cross-env NODE_ENV=development node ./scripts/seedAdmin.js",
+    "seed-db": "cross-env NODE_ENV=development node ./scripts/seedDatabase.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^7.0.6"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^9.14.0",
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "fixit-online",
+    "express",
+    "mongodb",
+    "backend",
+    "api"
+  ],
+  "author": "FixIt Online Team",
+  "license": "MIT"
+}
